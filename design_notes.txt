@@ -1,0 +1,92 @@
+functionality
+start up page
+    1 and 2 player buttons
+    click (clears page)
+game page
+    show cards (facedown) and scores
+    message with who's turn it is
+in a turn:
+    click on a box -> displays image
+    click on second box -> displays image (PAUSE)
+        if the same
+            "remove" the card match (make background color)
+            add score for that player
+            (still that player's turn)
+        if different
+            both are flipped back over
+            switches player
+            
+(one player: don't worry about switching turn, or displaying trun message)
+keep track of number of turns and display (instead of message thing)            
+
+two players
+    whose turn
+    score 1 
+    score 2
+one player
+    number of turns
+    score
+both
+    randomly initialize image locations (2 of each!)
+    for each spot: which image, and if the card is still there
+    array for storing cards -> look like GUI array of cards(?)
+    clicking on a box calls a function (more on that) with param which box (number or index)
+    using that number figures out which image is "there" and therefore to 
+    
+    ACTUALLY
+    "card" object
+        which image
+        bools: showing, stillThere
+        
+        
+        
+Initializing the array
+    have a list of 2 of each of the image values
+    make an array full of 0s
+    randomly pick array indicies
+        check if 0 (if not it's already a card)
+            add card: assign image value, booleans
+        if not 0: go try again
+        
+        
+Start of the game:
+    initialize the array
+    scores =0
+    have it be someone's turn
+    display scores and turn message
+Click:
+    call a flip function passing some kind of position identifier
+        if image is there
+            if image is NOT showing
+                get the image to display and display it 
+                see if there is another card showing
+                    (PAUSE if necessary)
+                    check the image values to see if the same
+                        if the same
+                            "remove" the card match (make background color) and change exists value
+                            add score for that player
+                            (still that player's turn)
+                            if array contains any card that exist, continue
+                            else game over
+                        if different
+                            both are flipped back over and "show" values changed
+                            switches player AND adds turn count
+                else do nothing
+            else do nothing
+        else do nothing
+
+
+game over:
+    things to display
+        one person
+            "you win!"
+            number of turns
+        two person
+            who won
+            winning score
+            
+            
+            
+            
+            
+    
