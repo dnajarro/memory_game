@@ -1,10 +1,11 @@
 //TODO: all the functionality for choosing/flipping a card
 
 var game = {
+  "is_two_player" : false;
   "player1" : 0,
   "player2" : 0,
-  "cards_array" : 0,
-  "game_array" : 0,
+  "cards_array" : 0, // array that holds all of the images
+  "game_array" : 0, // array of all the cards as they are used in the game
   "turn_num" : 0
 }
 
@@ -58,8 +59,9 @@ function choose_first_turn() {
 
 // TODO: get images and fill array with them
 function initialize_cards_array() {
-  var cards_array = []  // contains the images that we have in the
+  var cards_array = new Array(16).fill(0);  // contains the images that we have in the
                         // webpage's folder
+  // fill the array
 }
 
 function initialize_game_array(cards_array) {
@@ -82,4 +84,24 @@ function assign_cards(game_array, card_array) {
     game_array[index] = card;
   }
   return game_array;
+}
+
+function find_flipped_card() {
+  for (var i = 0; i < game["game_array"].length; i++) {
+    if (game["game_array"][i]["faceup"] == true) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function check_card(index) {
+  if (game["game_array"][index]["exists"] == true) {
+    if (find_flipped_card == true) {
+      // check matching
+    }
+    else {
+      // wait for next card to be clicked
+    }
+  }
 }
