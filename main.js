@@ -32,6 +32,7 @@ function initialize_game(is_two_player) {
       "myturn" : false
     }
     game["player2"] = player2;
+    game["is_two_player"] = true;
   }
 
   var cards_array = initialize_cards_array();
