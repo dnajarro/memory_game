@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#start_header {
+	text-align: center;
+	width:81%;
+    margin: 0 auto;
+}
+
+#game_info {
+	text-align: left;
+	margin:8%; 
+}
+
+
+
+.box {
+	background-color: green;
+	/*box-sizing: border-box*/
+	width: 23%;
+	height: 150px;
+	margin: 1%;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+#board {
+	visibility: hidden;
+}
+
