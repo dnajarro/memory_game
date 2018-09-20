@@ -76,8 +76,9 @@ function initialize_game_array(cards_array) {
 //idex need sto be assigned outside of it to be in scope of for loop
 function assign_cards(game_array, card_array) {
   for (var i = 0, len = card_array.length; i < len; i++) {
+	var index = getRndInteger(0, len);
     do {
-      var index = getRndInteger(0, len);
+      index = getRndInteger(0, len);
     } while (game_array[index] != 0);
 
     var card = {
@@ -85,7 +86,8 @@ function assign_cards(game_array, card_array) {
       "faceup" : false,
       "image" : card_array[i]};
     }
-    game_array[index] = card;
+	game_array[index] = card;
+
   }
   return game_array;
 }

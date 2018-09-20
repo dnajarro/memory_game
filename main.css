@@ -15,7 +15,7 @@
 
 
 .box {
-	background-color: green;
+	background-image: url("back.jpg");
 	/*box-sizing: border-box*/
 	width: 23%;
 	height: 150px;
@@ -25,6 +25,6 @@
 }
 
 #board {
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
