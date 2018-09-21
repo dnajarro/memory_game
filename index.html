@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
+<script type="text/javascript" src="main.js"></script>
 	<head>
 <meta charset="UTF-8">
 <title>Memory Game</title>
 <link rel="stylesheet" type="text/css" href="main.css">
-<script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
@@ -13,35 +12,36 @@
 		<div id="start_header">
 		<h1>Welcome to the Memory Game!</h1>
 		<h3>Select an option to begin the game:</h3>
-		<input type="button" id="one_player" value="1 player" onCLick="initialize_game(false)">
-		<input type="button" id="two_player" value="2 player" onCLick="initialize_game(true)">
+		<button onclick="initialize_game(false)" id="one_player">1 player</button>
+		<input type="button" id="two_player" value="2 player" onclick="initialize_game(true)">
 			</div>
 		<div id="game_info">
 		</div>
 		
 		<div id="board">
-			<div id="0" class="box" onClick="PUTFUNCTIONHERE(0)"></div>
-			<div id="1" class="box" onClick="PUTFUNCTIONHERE(1)"></div>
-			<div id="2" class="box" onClick="PUTFUNCTIONHERE(2)"></div>
-			<div id="3" class="box" onClick="PUTFUNCTIONHERE(3)"></div>
+			<div id="0" class="box" onClick="check_card(0)"></div>
+			<div id="1" class="box" onClick="check_card(1)"></div>
+			<div id="2" class="box" onClick="check_card(2)"></div>
+			<div id="3" class="box" onClick="check_card(3)"></div>
 			
-			<div id="4" class="box" onClick="PUTFUNCTIONHERE(4)"></div>
-			<div id="5" class="box" onClick="PUTFUNCTIONHERE(5)"></div>
-			<div id="6" class="box" onClick="PUTFUNCTIONHERE(6)"></div>
-			<div id="7" class="box" onClick="PUTFUNCTIONHERE(7)"></div>
+			<div id="4" class="box" onClick="check_card(4)"></div>
+			<div id="5" class="box" onClick="check_card(5)"></div>
+			<div id="6" class="box" onClick="check_card(6)"></div>
+			<div id="7" class="box" onClick="check_card(7)"></div>
 			
-			<div id="8" class="box" onClick="PUTFUNCTIONHERE(8)"></div>
-			<div id="9" class="box" onClick="PUTFUNCTIONHERE(9)"></div>
-			<div id="10" class="box" onClick="PUTFUNCTIONHERE(10)"></div>
-			<div id="11" class="box" onClick="PUTFUNCTIONHERE(11)"></div>
+			<div id="8" class="box" onClick="check_card(8)"></div>
+			<div id="9" class="box" onClick="check_card(9)"></div>
+			<div id="10" class="box" onClick="check_card(10)"></div>
+			<div id="11" class="box" onClick="check_card(11)"></div>
 			
-			<div id="12" class="box" onClick="PUTFUNCTIONHERE(12)"></div>
-			<div id="13" class="box" onClick="PUTFUNCTIONHERE(13)"></div>
-			<div id="14" class="box" onClick="PUTFUNCTIONHERE(14)"></div>
-			<div id="15" class="box" onClick="PUTFUNCTIONHERE(15)"></div>
+			<div id="12" class="box" onClick="check_card(12)"></div>
+			<div id="13" class="box" onClick="check_card(13)"></div>
+			<div id="14" class="box" onClick="check_card(14)"></div>
+			<div id="15" class="box" onClick="check_card(15)"></div>
 			
 		</div>
 	</div>
 
 </body>
+
 </html>
