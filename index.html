@@ -7,14 +7,15 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body>
+<body id="whole_thing">
 	<div id="main_container">
 		<div id="start_header">
-		<h1>Welcome to the Memory Game!</h1>
-		<h3>Select an option to begin the game:</h3>
-		<button onclick="initialize_game(false)" id="one_player">1 player</button>
-		<input type="button" id="two_player" value="2 player" onclick="initialize_game(true)">
-			</div>
+		    <h1>Welcome to the Memory Game!</h1><br>
+		    <h3>Select an option to begin the game:</h3>
+		    <button onclick="initialize_game(false)" id="one_player">1 player</button>
+		    <input type="button" id="two_player" value="2 player" onclick="initialize_game(true)">
+		</div>
+		
 		<div id="game_info">
 		</div>
 		
@@ -43,5 +44,4 @@
 	</div>
 
 </body>
-
 </html>

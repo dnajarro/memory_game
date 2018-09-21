@@ -1,25 +1,33 @@
 @charset "UTF-8";
 /* CSS Document */
 
+h1 {
+    color: rgb(6, 101, 196);
+}
+
+#whole_thing {
+    background-color: rgb(215, 235, 255);
+}
+
 #start_header {
 	text-align: center;
 	width:81%;
     margin: 0 auto;
+    margin-top:17%;
 }
 
 #game_info {
-	text-align: left;
+	text-align: center;
 	margin:8%; 
+	margin-top:1%;
+	margin-bottom:1%;
 }
-
-
 
 .box {
 	background-image: url("back.jpg");
 	background-size: 100% 100%;
-	/*box-sizing: border-box*/
 	width: 23%;
-	height: 150px;
+	height: 140px;
 	margin: 1%;
 	float: left;
 	background-repeat: no-repeat;
